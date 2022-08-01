@@ -1,0 +1,34 @@
+###
+POST http://localhost:8090/odata/v4/BPService/BusinessPartners
+Content-Type: application/json
+Authorization: Basic MasterDataAdmin:admin
+
+{
+    "BusinessPartner" : "104",
+     "Status" : "NEW"
+
+
+}
+###
+GET  http://localhost:8090/odata/v4/BPService/BusinessPartners
+
+###
+POST http://localhost:8090/odata/v4/BPService/BusinessPartners
+Content-Type: application/json
+
+
+{
+    "BusinessPartner" : "104",
+     "Status" : "NEW"
+
+
+}
+
+
+###
+GET  http://localhost:8080/odata/v4/BPService/$metadata
+Authorization: Basic MasterDataAdmin:admin
+
+###
+GET  http://localhost:8080/odata/v4/BPService/BusinessPartners
+Authorization: Basic MasterDataAdmin:admin

@@ -1,0 +1,15 @@
+---
+spring:
+  web.resources.static-locations: "file:./app/webapp"
+  config.activate.on-profile: cloud
+
+logging:
+ level:
+    com.sap.cds.security.authentication: DEBUG
+
+cds:
+ security:
+    openUnrestrictedEndpoints: true
+    openMetadataEndpoints: true 
+    xsuaa.enabled: false
+    defaultRestrictionLevel: any  
