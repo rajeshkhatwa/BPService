@@ -18,3 +18,15 @@ entity BusinessPartners {
     CountryCode : String;
     C4CID : String;
     }
+
+ @cds.persistence.skip
+entity eventPayload
+{
+  type : String;
+  specversion :String; 
+  source: String;
+  id : String;
+  time: String;
+  datacontenttype: String;
+  data : Composition of one BusinessPartners;   
+}    

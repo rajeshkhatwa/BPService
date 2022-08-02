@@ -9,6 +9,30 @@ Authorization: Basic MasterDataAdmin:admin
 
 
 }
+
+
+###
+POST http://localhost:8099/odata/v4/BPService/eventPayload
+Content-Type: application/json
+
+{ 
+
+ "type":"sap.s4.beh.businesspartner.v1.BusinessPartner.Changed.v1",
+ "specversion":"1.0", 
+ "source":"/default/sap.s4.beh/SD5CLNT001", 
+ "id":"42010aee-d834-1edd-80ff-ee9d1aba5061", 
+ "time":"2022-07-15T05:32:03Z",
+ "datacontenttype":"application/json", 
+ "data": 
+ { 
+  "BusinessPartner":"61" 
+ } 
+} 
+
+
+
+
+
 ###
 GET  http://localhost:8090/odata/v4/BPService/BusinessPartners
 
